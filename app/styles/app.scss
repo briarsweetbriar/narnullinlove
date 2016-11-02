@@ -1,21 +1,72 @@
+@import "fonts";
+@import "settings";
 @import "foundation";
 @include foundation-everything;
 
-html, body {
+html, body, body > .ember-view, .liquid-container, .liquid-child, .full-height {
   height: 100%;
 }
 
-.centered {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  min-height: 100%;
-}
-
-.image {
+.poster {
+  display: block;
+  margin: 20px auto 0;
   width: 100%;
   max-width: 831px;
-  margin: 25px 0;
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: $black 0 0 4px;
+  z-index: 100;
+
+  font-family: "Steelworks", Times, serif;
+  font-size: 145%;
+  color: $white;
+  a {
+    color: $white;
+  }
+  a:hover {
+    color: $medium-gray;
+  }
+  a.active {
+    color: #9B9B9B;
+  }
+}
+
+.main-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
+.scroller {
+  overflow-y: auto;
+}
+
+.main {
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+  padding-top: 25px;
+  text-align: justify;
+}
+
+.top-bar-shim {
+  flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+  height: 140px;
+  width: 100%;
+}
+
+@include breakpoint(medium) {
+  .top-bar {
+    font-size: 175%;
+  }
+
+  .top-bar-shim {
+    height: 85px;
+  }
 }

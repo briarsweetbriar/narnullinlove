@@ -7,6 +7,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('registry');
+  this.route('lodging');
+  this.route('for-fun');
+  this.route('about');
 });
 
 export default Router;
