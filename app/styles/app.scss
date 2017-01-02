@@ -27,6 +27,7 @@ html, body, body > .ember-view, .liquid-container, .liquid-child, .full-height {
   color: $white;
   a {
     color: $white;
+    text-decoration: none;
   }
   a:hover {
     color: $medium-gray;
