@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('lodging');
   this.route('for-fun');
   this.route('about');
+  this.route('basic-info');
 });
 
 export default Router;
