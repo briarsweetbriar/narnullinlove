@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('for-fun');
   this.route('about');
   this.route('basic-info');
+  this.route('rsvp');
 });
 
 export default Router;
