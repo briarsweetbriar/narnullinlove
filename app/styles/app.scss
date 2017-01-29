@@ -15,10 +15,6 @@ html, body, body > .ember-view, .liquid-container, .liquid-child, .full-height {
 }
 
 .top-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   box-shadow: $black 0 0 4px;
   z-index: 100;
 
@@ -46,6 +42,7 @@ html, body, body > .ember-view, .liquid-container, .liquid-child, .full-height {
 
 .scroller {
   overflow-y: auto;
+  height: 100%;
 }
 
 .main {
@@ -55,19 +52,8 @@ html, body, body > .ember-view, .liquid-container, .liquid-child, .full-height {
   text-align: justify;
 }
 
-.top-bar-shim {
-  flex-shrink: 0;
-  -webkit-flex-shrink: 0;
-  height: 140px;
-  width: 100%;
-}
-
 @include breakpoint(medium) {
   .top-bar {
     font-size: 175%;
-  }
-
-  .top-bar-shim {
-    height: 85px;
   }
 }
