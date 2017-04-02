@@ -52,8 +52,16 @@ html, body, body > .ember-view, .liquid-container, .liquid-child, .full-height {
   text-align: justify;
 }
 
+.media-object img {
+    max-width: 100%;
+}
+
 @include breakpoint(medium) {
   .top-bar {
     font-size: 175%;
+  }
+
+  .media-object-section-image {
+    width: 38%;
   }
 }
