@@ -12,8 +12,6 @@ Router.map(function() {
   this.route('for-fun');
   this.route('about');
   this.route('basic-info');
-  this.route('rsvp');
-  this.route('artists');
 });
 
 export default Router;
